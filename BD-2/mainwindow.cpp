@@ -47,6 +47,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    IndexD.state=1;
     IndexD.IndexDense();
     actualizar();
 }
@@ -106,5 +107,6 @@ void MainWindow::on_add_clicked()
 void MainWindow::on_pushButton_3_clicked()
 {
     IndexD.IndexDisperse();
+    IndexD.state=2;
     actualizar();
 }
