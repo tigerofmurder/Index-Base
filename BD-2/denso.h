@@ -38,7 +38,8 @@ public:
     list<Node*> Registre;
     list<Node*> Indexado;
     int i;
-    string type;
+    int state;
+
 public:
     Denso(){
         i=0;
@@ -54,6 +55,9 @@ public:
         Node *a=new Node(i,b,c,d);
         Registre.push_back(a);
         i++;
+        if(!Index.empty()){
+            refresh(state);
+        }
     }
     void refresh(int flag){
         if(flag==1){
